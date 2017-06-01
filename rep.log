@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.11)  1 JUN 2017 16:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.11)  1 JUN 2017 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1349,7 +1349,7 @@ File: taches.png Graphic file (type png)
 
 <use taches.png>
 Package pdftex.def Info: taches.png used on input line 203.
-(pdftex.def)             Requested size: 123.76123pt x 133.69826pt.
+(pdftex.def)             Requested size: 129.26294pt x 139.64171pt.
  [45
 
  <./taches.png>] [46
@@ -1358,51 +1358,52 @@ Package pdftex.def Info: taches.png used on input line 203.
 <tabl.png, id=1269, 403.5075pt x 357.335pt>
 File: tabl.png Graphic file (type png)
  <use tabl.png>
-Package pdftex.def Info: tabl.png used on input line 220.
+Package pdftex.def Info: tabl.png used on input line 229.
 (pdftex.def)             Requested size: 121.05318pt x 107.20132pt.
  [47
 
  <./tabl.png>]
-File: tabl.png Graphic file (type png)
-
-<use tabl.png>
-Package pdftex.def Info: tabl.png used on input line 227.
-(pdftex.def)             Requested size: 121.05318pt x 107.20132pt.
+<preview.jpg, id=1297, 722.7pt x 554.07pt>
+File: preview.jpg Graphic file (type jpg)
+ <use preview.jpg>
+Package pdftex.def Info: preview.jpg used on input line 239.
+(pdftex.def)             Requested size: 216.81166pt x 166.22227pt.
  [48
 
-]
-File: tabl.png Graphic file (type png)
- <use tabl.png>
-Package pdftex.def Info: tabl.png used on input line 234.
-(pdftex.def)             Requested size: 121.05318pt x 107.20132pt.
+ <./preview.jpg>] <preview2.jpg, id=1325, 722.7pt x 554.07pt>
+File: preview2.jpg Graphic file (type jpg)
+ <use preview2.jpg>
+Package pdftex.def Info: preview2.jpg used on input line 248.
+(pdftex.def)             Requested size: 216.81166pt x 166.22227pt.
  [49
 
-]
-File: tabl.png Graphic file (type png)
- <use tabl.png>
-Package pdftex.def Info: tabl.png used on input line 241.
-(pdftex.def)             Requested size: 121.05318pt x 107.20132pt.
- [50
+ <./preview2.jpg>] <preview3.jpg, id=1353, 722.7pt x 554.07pt>
+File: preview3.jpg Graphic file (type jpg)
+ <use preview3.jpg>
+Package pdftex.def Info: preview3.jpg used on input line 257.
+(pdftex.def)             Requested size: 216.81166pt x 166.22227pt.
 
-]
-File: tabl.png Graphic file (type png)
- <use tabl.png>
-Package pdftex.def Info: tabl.png used on input line 248.
-(pdftex.def)             Requested size: 121.05318pt x 107.20132pt.
+[50
 
-[51
+ <./preview3.jpg>] <preview4.jpg, id=1380, 722.7pt x 554.07pt>
+File: preview4.jpg Graphic file (type jpg)
 
-] [52
+<use preview4.jpg>
+Package pdftex.def Info: preview4.jpg used on input line 266.
+(pdftex.def)             Requested size: 216.81166pt x 166.22227pt.
+ [51
+
+ <./preview4.jpg>] [52
 
 ] [53
 
 ] [54
 
-] <logo.png, id=1480, 277.035pt x 181.67876pt>
+]
+<logo.png, id=1485, 277.035pt x 181.67876pt>
 File: logo.png Graphic file (type png)
-
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 266.
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 285.
 (pdftex.def)             Requested size: 138.51715pt x 90.83914pt.
  [55
 
@@ -1416,11 +1417,12 @@ Package pdftex.def Info: logo.png used on input line 266.
 \tf@snm=\write8
 \openout8 = `rep.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
- (./rep.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+
+(./rep.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `rep.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1428,13 +1430,13 @@ Package rerunfilecheck Info: File `rep.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 269.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 17788 strings out of 494999
- 320484 string characters out of 6180228
- 418429 words of memory out of 5000000
- 20458 multiletter control sequences out of 15000+600000
+ 17810 strings out of 494999
+ 320811 string characters out of 6180228
+ 418465 words of memory out of 5000000
+ 20476 multiletter control sequences out of 15000+600000
  7790 words of font info for 20 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,16n,59p,418b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1443,10 +1445,10 @@ er/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/user/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/ecss0500.600pk> </home/user/.texmf-var/fonts/pk/l
 jfour/jknappen/ec/ecss2488.600pk> </home/user/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecss1440.600pk>
-Output written on rep.pdf (55 pages, 1096552 bytes).
+Output written on rep.pdf (55 pages, 1320611 bytes).
 PDF statistics:
- 1702 PDF objects out of 1728 (max. 8388607)
+ 1708 PDF objects out of 1728 (max. 8388607)
  1449 compressed objects within 15 object streams
  111 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
