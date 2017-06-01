@@ -10,6 +10,7 @@
 
 \begin{document}
 \begin{frame}
+  \frametitle{Dcrypt}
 \begin{center}
 \Huge {Outil automatique de décryptage}
 \end{center}
@@ -21,9 +22,7 @@
   \frametitle{Introduction}
 
   \begin{itemize}[<+->]
-  \item La Stéganographie,
-  \item Origine de la cryptographie,
-  \item Ronald Rivest et le cryptage RSA
+  \item Definition de Crypto par Ronald Rivest
   
   \begin{block}{Les 3 critères}
     \begin{itemize}
@@ -33,24 +32,14 @@
     \end{itemize}
   \end{block}
   \end{itemize}
-  \pause
-  \begin{center}\includegraphics[scale=0.4]{Tab1.jpg}\end{center}
 
 \end{frame}
 
 
 \begin{frame}[<+->]
-  \frametitle{Dcrypt}
-  
-  \begin{exampleblock}{Produit sur le marché}
-	\begin{enumerate}
-    \item www.dcode.fr,
-    \item Decrypto (Google Play Store),
-    \item Axcrypt
-    \end{enumerate}
-  \end{exampleblock}
+  \frametitle{Introduction}
 
-  \begin{block}{Phase de développement}
+  \begin{block}{Phases de développement}
    
     \begin{enumerate}
     \item Identification,
@@ -63,80 +52,195 @@
 \end{frame}
 %flo
 \begin{frame}
-\includegraphics[scale = 0.22]{Org1.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org1.jpg}\\
+Module principal dont le rôle est de mettre une interface à disposition de l'utilisateur.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org2.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org2.jpg}\\
+Module qui compte le nombre de caractères, de digrammes et de trigrammes du texte.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org3.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org3.jpg}\\
+Module permettant le cryptage d'un texte en clair et la génération de clefs de cryptage.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org4.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org4.jpg}\\
+Module qui permet le décryptage d'un texte crypté et la récuperation de clefs de cryptages.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org5.jpg}
+  \frametitle{Introduction}
+\includegraphics[scale = 0.28]{Org5.jpg}\\
+L'interface graphique envoie un nom de fichier et reçoit le texte correspondant.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org6.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org6.jpg}\\
+L'interface graphique envoie une chaine de caractères et reçoit une structure contenant l'analyse fréquentielle.
 \end{frame}
 \begin{frame}
-\includegraphics[scale = 0.22]{Org7.jpg}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org7.jpg}\\
+L'interface graphique envoie trois chaines de caractères. Une contient 
+le texte crypté et deux sont vides et seront remplies par le module de 
+cryptage par substitution.
+\end{frame}
+\begin{frame}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org8.jpg}\\
+Pour le cryptage par la méthode de vigenère l'interface graphique 
+envoie trois chaines de caractères dont une contenant le texte 
+en clair, une contenant la clef de cryptage et une vide qui sera remplie par 
+le module.
+\end{frame}
+\begin{frame}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org9.jpg}\\
+Pour les deux decryptages, l'interface graphique envoie trois chaines de caractères.
+ Une correspondant 
+au texte crypté et deux vides qui seront remplies par les deux modules.
+\end{frame}
+\begin{frame}
+  \frametitle{Organigramme}
+\includegraphics[scale = 0.28]{Org10.jpg}\\
+L'analyse fréquentielle reçoit une chaine de caractères contenant le texte 
+à analyser et renvoie une structure contenant l'analyse fréquentielle.
 \end{frame}
 %tibo
 \begin{frame}
-	\begin{block}{Hypothèse du coûts en nombre de ligne}
-	\begin{center}
-		\includegraphics[scale =0.5]{Tableau_cout.jpg} \\ \pause
-	\end{center}
-	\end{block}
-	\begin{block}{Choix du language}
-	\begin{itemize}
-		\item Language C \\ \pause
-		\item Bibliothéque GTK +
-	\end{itemize}
-	\end{block}
+  \frametitle{Langage et bibliothèque graphique choisie}  
+  \begin{block}{Les critères de la séléction du langage}
+    \begin{itemize}
+    \pause
+  \item Besoin programmeur: \\
+  -Traitement de données, langage performant et complet, installer l'application sur différents environnements. \\
+  \pause
+  \item Réponse: Le langage C \\
+  -Programmation fonctionnelle(idéale pour traitement de données). \\
+  -Langage performant et complet (source: IEEE)\\
+  -Recompilation permet execution sur différents environnements.  \\
+  \vspace*{1mm}
+  \pause
+   *De plus, langage C maitrisé par toute l'équipe. \\
+    \end{itemize}
+  \end{block}
+ 
+  \pause
+ 
+    \begin{block}{Les critères de séléction de la bibliothèque graphique}
+    \begin{itemize}
+    \pause
+  \item Besoin de l'application: \\
+                -Création de boutons, Zones de texte, Traitement de fichiers. \\
+    \pause
+  \item Réponse => GTK+ (The GIMP Toolkit) : ensemble de bibliothèques logicielles qui permettent la création d'une interface graphique.
+        
+  \item De plus, bibliothèque complète et non spécifique a un OS.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+
+\begin{frame}[<+->]
+  \frametitle{Tests unitaires}
+  \begin{block}{Utilisation de la librairie de Tests CUnit}
+    \begin{itemize}
+    \pause
+  \item CUnit possède les fonctions nécessaires pour gèrer une suite de tests.
+  \item Permet une maintenance et facilite l'amélioration de l'application
+  \item Les tests lancent les fonctions de facon séparé avec un ASSERT qui vérifie par exemple si une variable contient le résultat attendu.\\
+    \end{itemize}
+  \end{block}
+    \begin{block}{Exemple du lancement d'une suite test}
+    \begin{center}
+       \includegraphics[scale = 0.6]{Capture.png}
+    \end{center}
+  \end{block}
+
 \end{frame}
 %younes
-\begin{frame}
-	partie technique
+\begin{frame}[<+->]
+  \frametitle{Partie technique}
 	\begin{block}{Interface graphique}
 	\begin{itemize}
-		\item passer des arguments\\ \pause
-		\item switch\\ \pause
-		\item seg fault de l'enregistrement
+		\item passage d'arguments\\ 
+		\item switch\\ 
+		\item erreur de mémoire suite à l'enregistrement
 	\end{itemize}
 	\end{block}
-	\begin{block}{Analyse fréquentielle}
+	\begin{block}{Analyse fréquentielle(Tri)}
 	\begin{itemize}
-		\item strcpy \pause
+		\item strcpy 
 	\end{itemize}
 	\end{block}
 	\begin{block}{Decryptage Vigenere}
 	\begin{itemize}
-		\item kasiski\\ \pause
+		\item kasiski\\ 
 	\end{itemize}
 	\end{block}
 	\begin{block}{Decryptage Substitution}
 	\begin{itemize}
-		\item estimations\\ \pause
+		\item estimations\\ 
 	\end{itemize}
 	\end{block}
 \end{frame}
 %zak
 \begin{frame}
-	\begin{block}{organisation interne}
-	\end{block}
-	\begin{block}{taches}
+	\begin{block}{Organisation Interne et Repartition des Taches}
 	\begin{center}
 		\includegraphics[scale =0.45]{taches.png} \\ 
+	\end{center}
+		\begin{itemize}
+		\item Bon deroulement global\\ 
+		\item Reflexion commune\\ 
+		\item Tableau\\ 
+		\item Reunis regulierement\\ 
+	\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\begin{block}{Planing de développement}
+			\begin{itemize}
+		\item Interface graphique\\ 
+		\item Codage + tests de chaque module\\ 
+		\item Reunir les parties\\ 
+		\item Priorité\\ 
+	\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\begin{block}{Nombre de lignes de code des modules}
+	\begin{center}
+		\includegraphics[scale =0.3]{tabl.png} \\ 
 	\end{center}
 	\end{block}
 \end{frame}
 \begin{frame}
-	\begin{block}{Planing}
+	\begin{block}{Nombre de lignes de code des modules}
+	\begin{center}
+		\includegraphics[scale =0.3]{tabl.png} \\ 
+	\end{center}
 	\end{block}
-	\begin{block}{coûts en nombre de ligne}
+\end{frame}
+\begin{frame}
+	\begin{block}{Nombre de lignes de code des modules}
+	\begin{center}
+		\includegraphics[scale =0.3]{tabl.png} \\ 
+	\end{center}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\begin{block}{Nombre de lignes de code des modules}
+	\begin{center}
+		\includegraphics[scale =0.3]{tabl.png} \\ 
+	\end{center}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\begin{block}{Nombre de lignes de code des modules}
 	\begin{center}
 		\includegraphics[scale =0.3]{tabl.png} \\ 
 	\end{center}
@@ -144,9 +248,18 @@
 \end{frame}
 %abio
 \begin{frame}
-\begin{center}
-\Huge {Conclusion}\pause
-\end{center}
+  \frametitle{Conclusion}
+	\begin{block}{Modifications et Ameliorations}
+	\begin{itemize} \pause
+		\item Ajouter un dictionnaire\\
+		\item Modifier Cahier des Specifications\\ \pause
+		\item Plus de langues\\ 
+		\item Plus de choix de chiffrement
+	\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+  \frametitle{Conclusion}
 \begin{center}
 \includegraphics[scale =0.5]{logo.png}
 \end{center}
